@@ -22,7 +22,7 @@ Basic operation of the Eigen library.
 
 # 矩阵操作
     /*四则运算*/                                                             //+、-、/ 同理
-   //Matrix<float,3,1> multiply_result = matrix_32 * v_2d;                 //数据类型不同，不能直接操作
+  // Matrix<float,3,1> multiply_result = matrix_32 * v_2d;                  //数据类型不同，不能直接操作
     Matrix<float,3,1> multiply_result = matrix_32 * v_2d.cast<float>();     //应该显式转换,三个类型需要一致
 
     /*随机数矩阵*/
